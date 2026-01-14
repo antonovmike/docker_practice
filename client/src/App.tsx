@@ -14,9 +14,9 @@ export default function App() {
 
   return (
     <>
-      <div className="min-h-screen flex items-center justify-center bg-neutral-800">
+      <div className="min-h-screen flex items-center justify-center bg-[#353535ff]">
         <StyledBox>
-          <h1 className="text-2xl text-yellow-600 font-bold mb-2">Greetings</h1>
+          <h1 className="text-2xl text-[#d79921] font-bold mb-2">Greetings</h1>
           <p className="text-lg">{message}</p>
           <p className="text-lg">TEST</p>
         </StyledBox>
