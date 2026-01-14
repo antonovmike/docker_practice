@@ -2,9 +2,9 @@ import StyledBox from "./components/StyledBox";
 
 export default function CheatSheet() {
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-800 p-8">
+    <div className="min-h-screen bg-neutral-800">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-3xl font-bold mb-6 text-blue-600">
+        <h1 className="text-2xl text-yellow-600 font-bold mb-2">
           Quick Commands Cheat Sheet
         </h1>
         <StyledBox>

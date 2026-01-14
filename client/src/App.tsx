@@ -14,11 +14,11 @@ export default function App() {
 
   return (
     <>
-      <div className="min-h-screen flex items-center justify-center bg-gray-100">
+      <div className="min-h-screen flex items-center justify-center bg-neutral-800">
         <StyledBox>
-          <h1 className="text-2xl font-bold mb-2">Greetings</h1>
-          <p className="text-lg text-blue-600">{message}</p>
-          <p className="text-lg text-blue-600">TEST</p>
+          <h1 className="text-2xl text-yellow-600 font-bold mb-2">Greetings</h1>
+          <p className="text-lg">{message}</p>
+          <p className="text-lg">TEST</p>
         </StyledBox>
       </div>
     </>
