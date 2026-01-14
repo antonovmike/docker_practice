@@ -1,13 +1,12 @@
 import StyledBox from "./components/StyledBox";
+import StyledHeading from "./components/StyledHeading";
 
 export default function CheatSheet() {
   return (
     <div className="min-h-screen bg-[#353535ff]">
       <div className="max-w-3xl mx-auto">
         <StyledBox>
-          <h1 className="text-2xl text-[#d79921] font-bold mb-2">
-            Quick Commands Cheat Sheet
-          </h1>
+          <StyledHeading>Quick Commands Cheat Sheet</StyledHeading>
 
           {`
 # Containers
