@@ -4,7 +4,7 @@ import StyledParagraph from "./components/StyledParagraph";
 
 export default function CheatSheet() {
   return (
-    <div className="min-h-screen bg-[#353535ff]">
+    <div className="min-h-screen flex items-center justify-center bg-[#353535ff]">
       <div className="max-w-3xl mx-auto">
         <StyledBox>
           <StyledHeading>Docker Quick Commands Cheat Sheet</StyledHeading>
