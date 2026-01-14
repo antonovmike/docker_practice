@@ -1,5 +1,6 @@
 import StyledBox from "./components/StyledBox";
 import StyledHeading from "./components/StyledHeading";
+import StyledParagraph from "./components/StyledParagraph";
 
 export default function CheatSheet() {
   return (
@@ -7,8 +8,8 @@ export default function CheatSheet() {
       <div className="max-w-3xl mx-auto">
         <StyledBox>
           <StyledHeading>Quick Commands Cheat Sheet</StyledHeading>
-
-          {`
+          <StyledParagraph>
+            {`
 # Containers
 docker ps
 docker ps -a
@@ -34,6 +35,7 @@ docker container prune
 docker image prune
 docker system prune -a
 `}
+          </StyledParagraph>
         </StyledBox>
       </div>
     </div>

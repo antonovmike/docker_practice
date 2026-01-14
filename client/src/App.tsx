@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import StyledBox from "./components/StyledBox";
 import StyledHeading from "./components/StyledHeading";
+import StyledParagraph from "./components/StyledParagraph";
 
 export default function App() {
   const [message, setMessage] = useState<string>("...");
@@ -18,8 +19,8 @@ export default function App() {
       <div className="min-h-screen flex items-center justify-center bg-[#353535ff]">
         <StyledBox>
           <StyledHeading>Greetings</StyledHeading>
-          <p className="text-lg">{message}</p>
-          <p className="text-lg">TEST</p>
+          <StyledParagraph>{message}</StyledParagraph>
+          <StyledParagraph>TEST</StyledParagraph>
         </StyledBox>
       </div>
     </>
