@@ -7,7 +7,7 @@ export default function CheatSheet() {
     <div className="min-h-screen bg-[#353535ff]">
       <div className="max-w-3xl mx-auto">
         <StyledBox>
-          <StyledHeading>Quick Commands Cheat Sheet</StyledHeading>
+          <StyledHeading>Docker Quick Commands Cheat Sheet</StyledHeading>
           <StyledParagraph>
             {`
 # Containers
