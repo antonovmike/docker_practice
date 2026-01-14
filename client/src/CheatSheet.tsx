@@ -1,3 +1,5 @@
+import StyledBox from "./components/StyledBox";
+
 export default function CheatSheet() {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-800 p-8">
@@ -5,7 +7,7 @@ export default function CheatSheet() {
         <h1 className="text-3xl font-bold mb-6 text-blue-600">
           Quick Commands Cheat Sheet
         </h1>
-        <pre className="bg-white shadow rounded-lg p-6 whitespace-pre-wrap font-mono text-sm leading-relaxed">
+        <StyledBox>
           {`
 # Containers
 docker ps
@@ -32,7 +34,7 @@ docker container prune
 docker image prune
 docker system prune -a
 `}
-        </pre>
+        </StyledBox>
       </div>
     </div>
   );

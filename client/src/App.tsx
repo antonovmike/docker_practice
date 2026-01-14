@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import StyledBox from "./components/StyledBox";
 
 export default function App() {
   const [message, setMessage] = useState<string>("...");
@@ -14,11 +15,11 @@ export default function App() {
   return (
     <>
       <div className="min-h-screen flex items-center justify-center bg-gray-100">
-        <div className="p-6 rounded-lg shadow bg-white">
+        <StyledBox>
           <h1 className="text-2xl font-bold mb-2">Greetings</h1>
           <p className="text-lg text-blue-600">{message}</p>
           <p className="text-lg text-blue-600">TEST</p>
-        </div>
+        </StyledBox>
       </div>
     </>
   );
