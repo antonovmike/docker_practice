@@ -15,6 +15,9 @@ FROM nginx:alpine AS runtime
 # Copy build output
 COPY --from=build /app/dist /usr/share/nginx/html
 
+# Copy custom nginx config
+COPY ./nginx.conf /etc/nginx/conf.d/default.conf
+
 # Configure Nginx to serve static files
 # and optionally proxy /greetings to backend if you prefer same origin
 # For simplicity, we’ll keep CORS by calling backend via its own port.
