@@ -1,15 +1,15 @@
 import StyledBox from "./components/StyledBox";
+import StyledPage from "./components/StyledPage";
 import StyledHeading from "./components/StyledHeading";
 import StyledParagraph from "./components/StyledParagraph";
 
 export default function CheatSheet() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#353535ff]">
-      <div className="max-w-3xl mx-auto">
-        <StyledBox>
-          <StyledHeading>Docker Quick Commands Cheat Sheet</StyledHeading>
-          <StyledParagraph>
-            {`
+    <StyledPage>
+      <StyledBox>
+        <StyledHeading>Docker Quick Commands Cheat Sheet</StyledHeading>
+        <StyledParagraph>
+          {`
 # Containers
 docker ps
 docker ps -a
@@ -35,9 +35,8 @@ docker container prune
 docker image prune
 docker system prune -a
 `}
-          </StyledParagraph>
-        </StyledBox>
-      </div>
-    </div>
+        </StyledParagraph>
+      </StyledBox>
+    </StyledPage>
   );
 }
