@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import StyledBox from "./components/StyledBox";
+import StyledPage from "./components/StyledPage";
 import StyledHeading from "./components/StyledHeading";
 import StyledParagraph from "./components/StyledParagraph";
 
@@ -16,13 +17,13 @@ export default function App() {
 
   return (
     <>
-      <div className="min-h-screen flex items-center justify-center bg-[#353535ff]">
+      <StyledPage>
         <StyledBox>
           <StyledHeading>Greetings</StyledHeading>
           <StyledParagraph>{message}</StyledParagraph>
           <StyledParagraph>TEST</StyledParagraph>
         </StyledBox>
-      </div>
+      </StyledPage>
     </>
   );
 }

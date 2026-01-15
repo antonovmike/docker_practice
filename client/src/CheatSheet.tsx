@@ -1,10 +1,11 @@
 import StyledBox from "./components/StyledBox";
+import StyledPage from "./components/StyledPage";
 import StyledHeading from "./components/StyledHeading";
 import StyledParagraph from "./components/StyledParagraph";
 
 export default function CheatSheet() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#353535ff]">
+    <StyledPage>
       <StyledBox>
         <StyledHeading>Docker Quick Commands Cheat Sheet</StyledHeading>
         <StyledParagraph>
@@ -36,6 +37,6 @@ docker system prune -a
 `}
         </StyledParagraph>
       </StyledBox>
-    </div>
+    </StyledPage>
   );
 }
