@@ -1,4 +1,7 @@
 import { useEffect, useState } from "react";
+import StyledBox from "./components/StyledBox";
+import StyledHeading from "./components/StyledHeading";
+import StyledParagraph from "./components/StyledParagraph";
 
 export default function App() {
   const [message, setMessage] = useState<string>("...");
@@ -13,25 +16,13 @@ export default function App() {
 
   return (
     <>
-      <div className="min-h-screen flex items-center justify-center bg-gray-100">
-        <div className="p-6 rounded-lg shadow bg-white">
-          <h1 className="text-2xl font-bold mb-2">Greetings</h1>
-          <p className="text-lg text-blue-600">{message}</p>
-          <p className="text-lg text-blue-600">TEST</p>
-        </div>
+      <div className="min-h-screen flex items-center justify-center bg-[#353535ff]">
+        <StyledBox>
+          <StyledHeading>Greetings</StyledHeading>
+          <StyledParagraph>{message}</StyledParagraph>
+          <StyledParagraph>TEST</StyledParagraph>
+        </StyledBox>
       </div>
-      {/* 
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p> */}
     </>
   );
 }
