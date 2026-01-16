@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
 
 export default function StyledHeading({ children }: { children: ReactNode }) {
-  return <h1 className="text-[#d79921] text-2xl font-bold mb-2">{children}</h1>;
+  return <h2 className="text-[#9f8039] text-2xl font-bold mb-2">{children}</h2>;
 }
