@@ -1,13 +1,13 @@
 import StyledBox from "./components/StyledBox";
 import StyledPage from "./components/StyledPage";
-import StyledHeading from "./components/StyledHeading";
+import StyledHeadingH1 from "./components/StyledHeadingH1";
 import StyledParagraph from "./components/StyledParagraph";
 
 export default function CheatSheet() {
   return (
     <StyledPage>
       <StyledBox>
-        <StyledHeading>Docker Quick Commands Cheat Sheet</StyledHeading>
+        <StyledHeadingH1>Docker Quick Commands Cheat Sheet</StyledHeadingH1>
         <StyledParagraph>
           {`
 # Containers

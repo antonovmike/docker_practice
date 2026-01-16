@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import StyledBox from "./components/StyledBox";
 import StyledPage from "./components/StyledPage";
-import StyledHeading from "./components/StyledHeading";
+import StyledHeadingH1 from "./components/StyledHeadingH1";
+import StyledHeadingH2 from "./components/StyledHeadingH2";
 import StyledParagraph from "./components/StyledParagraph";
 
 export default function App() {
@@ -19,9 +20,9 @@ export default function App() {
     <>
       <StyledPage>
         <StyledBox>
-          <StyledHeading>Greetings</StyledHeading>
+          <StyledHeadingH1>Greetings</StyledHeadingH1>
+          <StyledHeadingH2>Server says:</StyledHeadingH2>
           <StyledParagraph>{message}</StyledParagraph>
-          <StyledParagraph>TEST</StyledParagraph>
         </StyledBox>
       </StyledPage>
     </>
