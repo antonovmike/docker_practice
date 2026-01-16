@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import StyledBox from "./components/StyledBox";
 import StyledPage from "./components/StyledPage";
 import StyledHeadingH1 from "./components/StyledHeadingH1";
 import StyledHeadingH2 from "./components/StyledHeadingH2";
 import StyledParagraph from "./components/StyledParagraph";
+import StyledLink from "./components/StyledLink";
 
 export default function App() {
   const [message, setMessage] = useState<string>("...");
@@ -24,9 +24,7 @@ export default function App() {
           <StyledHeadingH1>Greetings</StyledHeadingH1>
           <StyledHeadingH2>Server says:</StyledHeadingH2>
           <StyledParagraph>{message}</StyledParagraph>
-          <StyledParagraph>
-            <Link to="/cheatsheet">Go to CheatSheet</Link>
-          </StyledParagraph>
+          <StyledLink to="/cheatsheet">Go to CheatSheet</StyledLink>
         </StyledBox>
       </StyledPage>
     </>
