@@ -21,7 +21,6 @@ export default function App() {
         <StyledBox>
           <StyledHeading>Greetings</StyledHeading>
           <StyledParagraph>{message}</StyledParagraph>
-          <StyledParagraph>TEST</StyledParagraph>
         </StyledBox>
       </StyledPage>
     </>
