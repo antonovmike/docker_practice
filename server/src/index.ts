@@ -14,3 +14,5 @@ app.get("/greetings", (_req: Request, res: Response) => {
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 });
+
+export default app;
