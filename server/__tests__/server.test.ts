@@ -8,3 +8,9 @@ describe("Backend API", () => {
     expect(res.text).toBe("Hello");
   });
 });
+
+test("GET /unknown -> 404 Not Found", async () => {
+  const res = await request(app).get("/unknown");
+  expect(res.statusCode).toBe(404);
+  expect(res.body).toHaveProperty("error", "Not found");
+});
