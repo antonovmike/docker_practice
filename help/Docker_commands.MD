@@ -73,6 +73,10 @@
   ```bash
   docker compose ps
   ```
+- **Remove container**
+  ```bash
+  docker container rm <container_name_or_id>
+  ```
 - **Run a command inside a service**
   ```bash
   docker compose exec <service_name> sh
