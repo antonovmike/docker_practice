@@ -8,7 +8,7 @@
     "strict": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "types": ["node"]
+    "types": ["node", "jest"]
   },
   "include": ["src"],
   "exclude": ["dist", "node_modules", "__tests__"]
