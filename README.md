@@ -204,6 +204,30 @@ services:
       - server
 ```
 
+---
+
+## 8. Test Docker Setup with Vitest
+
+Run the integration test that builds and starts both containers via Docker Compose and verifies their responses:
+
+```bash
+npm run test:docker
+```
+
+This command will:
+
+    Build server and client images.
+
+    Start both containers with docker compose up --build.
+
+    Check that the backend responds with "Hello" on /greetings.
+
+    Check that the frontend serves static HTML via Nginx.
+
+    Stop and remove containers after tests complete.
+
+---
+
 ### Start everything
 
 ```bash
