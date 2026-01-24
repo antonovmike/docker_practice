@@ -5,9 +5,18 @@ import StyledHeadingH1 from "./components/StyledHeadingH1";
 import StyledHeadingH2 from "./components/StyledHeadingH2";
 import StyledParagraph from "./components/StyledParagraph";
 import StyledLink from "./components/StyledLink";
+import StyledTabs from "./components/StyledTabs";
 
 export default function App() {
   const [message, setMessage] = useState<string>("...");
+
+  const tabs = [
+    { label: "Profile", href: "#/profile" },
+    { label: "Dashboard", href: "#/dashboard", active: true },
+    { label: "Settings", href: "#/settings" },
+    { label: "Contacts", href: "#/contacts" },
+    { label: "Disabled", href: "#", disabled: true },
+  ];
 
   useEffect(() => {
     const apiBase = import.meta.env.VITE_API_BASE ?? "";
@@ -21,6 +30,7 @@ export default function App() {
     <>
       <StyledPage>
         <StyledBox>
+          <StyledTabs items={tabs} />
           <StyledHeadingH1>Greetings</StyledHeadingH1>
           <StyledHeadingH2>Server says:</StyledHeadingH2>
           <StyledParagraph>{message}</StyledParagraph>
