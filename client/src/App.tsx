@@ -11,7 +11,7 @@ export default function App() {
   const [message, setMessage] = useState<string>("...");
 
   const tabs = [
-    { label: "Profile", href: "#/profile" },
+    { label: "CheatSheet", href: "/cheatsheet" },
     { label: "Dashboard", href: "#/dashboard", active: true },
     { label: "Settings", href: "#/settings" },
     { label: "Contacts", href: "#/contacts" },

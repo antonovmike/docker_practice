@@ -2,11 +2,20 @@ import StyledBox from "./components/StyledBox";
 import StyledPage from "./components/StyledPage";
 import StyledHeadingH1 from "./components/StyledHeadingH1";
 import StyledParagraph from "./components/StyledParagraph";
+import StyledTabs from "./components/StyledTabs";
 
 export default function CheatSheet() {
+  const tabs = [
+    { label: "CheatSheet", href: "/cheatsheet" },
+    { label: "Dashboard", href: "#/dashboard", active: true },
+    { label: "Settings", href: "#/settings" },
+    { label: "Contacts", href: "#/contacts" },
+    { label: "Disabled", href: "#", disabled: true },
+  ];
   return (
     <StyledPage>
       <StyledBox>
+        <StyledTabs items={tabs} />
         <StyledHeadingH1>Docker Quick Commands Cheat Sheet</StyledHeadingH1>
         <StyledParagraph>
           {`
